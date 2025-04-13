@@ -20,7 +20,7 @@ pipeline {
             steps {
                 script {
                     sh "docker rm -f sample-app || true"
-                    dockerImage.run("-d -p 8080:80 --name sample-app")
+                    dockerImage.run("-d -p 8081:80 --name sample-app")
                 }
             }
         }
